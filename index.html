@@ -151,29 +151,36 @@
         <legend align="center">MAX CALCULATOR</legend>
       </div>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-2">
 
 
       </div>
-      <div class="col-md-8">
+      <div class="col-md-10">
         <div class="col-md-4" align="center">
         <form name="in_form" class="form-horizontal">
         <div class="form-group">
           <label class="col-sm-3 control-label">重量</label>
           <div class="col-sm-9">
-            <input type=text name="w" value="">
+            <input type="number" step="0.1" name="w" value="">
           </div>
         </div>
         <div class="form-group">
           <label class="col-sm-3 control-label">回数</label>
           <div class="col-sm-9">
-            <input type=text name="r" value="">
+            <input type="number" name="r" value="">
           </div>
         </div>
         <div class="form-group">
           <label class="col-sm-3 control-label">体重</label>
           <div class="col-sm-9">
-            <input type=text name="bw" value=""><br>
+            <input type="number" step="0.1" name="bw" value=""><br>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">性別</label>
+          <div class="col-sm-9">
+            <input type="radio" name="sex" value="male" checked="checked"/> 男　
+            <input type="radio" name="sex" value="female" /> 女
           </div>
         </div>
         <input type="button" class="btn btn-primary" value="CALCULATE" onClick="calc()"><br>
@@ -184,12 +191,13 @@
             <input type=text name="max" value="">
           </div>
         <div class="form-group">
-          <label class="col-sm-12 control-label">あなたのレベル</label>
+          <label class="col-sm-12 control-label">あなたのレベル </label>
             <input type=text name="level" value=""><br><br>
           </div>
         </div>
         </form>
-        <div class="col-md-4">
+        <div class="col-md-5">
+        <div class="box4">
           <h3>あなたのMAXとレベルを算出します。</h3>
           ベンチプレスの重量と回数、体重を入力してください。<br>
           <span style="border-bottom: solid 3px red;">MAX値 = 重量 × 回数 × 0.0333 + 重量</span><br><br>
@@ -223,6 +231,11 @@
                   </tr>
               </tbody>
           </table>
+      </div>
+    </div>
+      <div class="col-md-1">
+
+
       </div>
     </div>
   </body>
