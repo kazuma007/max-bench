@@ -34,102 +34,282 @@
         var level3 = "Intermediate";
         var level4 = "Advanced";
         var level5 = "Elite";
-        if(bw < 52){
-          if(max < 50){
-            document.out_form.level.value = level1 ;
-          }else if(max >= 50 && max < 60){
-            document.out_form.level.value = level2 ;
-          }else if(max >= 60 && max < 82.5){
-            document.out_form.level.value = level3 ;
-          }else if(max >= 82.5 && max < 100){
-            document.out_form.level.value = level4 ;
-          }else if(max >= 100){
-            document.out_form.level.value = level5 ;
+        var element = document.getElementById( "in_form" ) ;
+        var radioNodeList = element.sex ;
+        var a = radioNodeList.value ;
+        if ( a === "男性" ) {
+          if(bw < 52){
+            if(max < 50){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 50 && max < 60){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 60 && max < 82.5){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 82.5 && max < 100){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 100){
+              document.out_form.level.value = level5 ;
+            }
+          }else if(bw >= 52 && bw < 56){
+            if(max < 52.5){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 52.5 && max < 62.5){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 62.5 && max < 90){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 90 && max < 110){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 110){
+              document.out_form.level.value = level5 ;
+            }
+          }else if(bw >= 56 && bw < 60){
+            if(max < 57.5){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 57.5 && max < 70){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 70 && max < 95){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 95 && max < 117.5){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 117.5){
+              document.out_form.level.value = level5 ;
+            }
+          }else if(bw >= 60 && bw < 67){
+            if(max < 65){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 65 && max < 77.5){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 77.5 && max < 107.5){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 107.5 && max < 132.5){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 132.5){
+              document.out_form.level.value = level5 ;
+            }
+          }else if(bw >= 67 && bw < 75){
+            if(max < 70){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 70 && max < 85){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 85 && max < 115){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 115 && max < 145){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 145){
+              document.out_form.level.value = level5 ;
+            }
+          }else if(bw >= 75 && bw < 82){
+            if(max < 75){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 75 && max < 90){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 90 && max < 125){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 125 && max < 157.5){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 157.5){
+              document.out_form.level.value = level5 ;
+            }
+          }else if(bw >= 82 && bw < 90){
+            if(max < 80){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 80 && max < 97.5){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 97.5 && max < 132.5){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 132.5 && max < 162.5){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 162.5){
+              document.out_form.level.value = level5 ;
+            }
+          }else if(bw >= 90 && bw < 100){
+            if(max < 82.5){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 82.5 && max < 102.5){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 102.5 && max < 137.5){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 137.5 && max < 172.5){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 172.5){
+              document.out_form.level.value = level5 ;
+            }
+          }else if(bw >= 100 && bw < 110){
+            if(max < 85){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 85 && max < 105.5){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 105.5 && max < 142.5){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 142.5 && max < 180){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 180){
+              document.out_form.level.value = level5 ;
+            }
+          }else if(bw >= 110 && bw < 125){
+            if(max < 87.5){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 87.5 && max < 107.5){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 107.5 && max < 147.5){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 147.5 && max < 185){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 185){
+              document.out_form.level.value = level5 ;
+            }
+          }else if(bw >= 125 && bw < 145){
+            if(max < 90){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 90 && max < 112.5){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 112.5 && max < 152.5){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 152.5 && max < 190){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 190){
+              document.out_form.level.value = level5 ;
+            }
+          }else if(bw >= 145){
+            if(max < 92.5){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 92.5 && max < 115){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 115 && max < 155){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 155 && max < 192.5){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 192.5){
+              document.out_form.level.value = level5 ;
+            }
           }
-        }else if(bw >= 52 && bw < 56){
-          if(max < 52.5){
-            document.out_form.level.value = level1 ;
-          }else if(max >= 52.5 && max < 62.5){
-            document.out_form.level.value = level2 ;
-          }else if(max >= 62.5 && max < 90){
-            document.out_form.level.value = level3 ;
-          }else if(max >= 90 && max < 110){
-            document.out_form.level.value = level4 ;
-          }else if(max >= 110){
-            document.out_form.level.value = level5 ;
+        }else{
+          if(bw < 44){
+            if(max < 30){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 30 && max < 35){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 35 && max < 42.5){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 42.5 && max < 52.5){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 52.5){
+              document.out_form.level.value = level5 ;
+            }
+          }else if(bw >= 44 && bw < 48){
+            if(max < 32.5){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 32.5 && max < 37.5){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 37.5 && max < 45){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 45 && max < 57.5){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 57.5){
+              document.out_form.level.value = level5 ;
+            }
+          }else if(bw >= 48 && bw < 52){
+            if(max < 35){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 35 && max < 37.5){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 37.5 && max < 50){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 50 && max < 62.5){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 62.5){
+              document.out_form.level.value = level5 ;
+            }
+          }else if(bw >= 52 && bw < 56){
+            if(max < 37.5){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 37.5 && max < 40){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 40 && max < 52.5){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 52.5 && max < 65){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 65){
+              document.out_form.level.value = level5 ;
+            }
+          }else if(bw >= 56 && bw < 60){
+            if(max < 40){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 40 && max < 42.5){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 42.5 && max < 57.5){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 57.5 && max < 67.5){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 67.5){
+              document.out_form.level.value = level5 ;
+            }
+          }else if(bw >= 60 && bw < 67){
+            if(max < 40){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 40 && max < 47.5){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 47.5 && max < 62.5){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 62.5 && max < 75){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 75){
+              document.out_form.level.value = level5 ;
+            }
+          }else if(bw >= 67 && bw < 75){
+            if(max < 42.5){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 42.5 && max < 52.5){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 52.5 && max < 65){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 65 && max < 85){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 85){
+              document.out_form.level.value = level5 ;
+            }
+          }else if(bw >= 75 && bw < 82){
+            if(max < 50){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 50 && max < 55){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 55 && max < 72.5){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 72.5 && max < 90){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 90){
+              document.out_form.level.value = level5 ;
+            }
+          }else if(bw >= 82 && bw < 90){
+            if(max < 52.5){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 52.5 && max < 60){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 60 && max < 75){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 75 && max < 90){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 90){
+              document.out_form.level.value = level5 ;
+            }
+          }else if(bw >= 90){
+            if(max < 55){
+              document.out_form.level.value = level1 ;
+            }else if(max >= 55 && max < 62.5){
+              document.out_form.level.value = level2 ;
+            }else if(max >= 62.5 && max < 80){
+              document.out_form.level.value = level3 ;
+            }else if(max >= 80 && max < 100){
+              document.out_form.level.value = level4 ;
+            }else if(max >= 100){
+              document.out_form.level.value = level5 ;
+            }
           }
-        }else if(bw >= 56 && bw < 60){
-          if(max < 57.5){
-            document.out_form.level.value = level1 ;
-          }else if(max >= 57.5 && max < 70){
-            document.out_form.level.value = level2 ;
-          }else if(max >= 70 && max < 95){
-            document.out_form.level.value = level3 ;
-          }else if(max >= 95 && max < 117.5){
-            document.out_form.level.value = level4 ;
-          }else if(max >= 117.5){
-            document.out_form.level.value = level5 ;
-          }
-        }else if(bw >= 60 && bw < 67){
-          if(max < 65){
-            document.out_form.level.value = level1 ;
-          }else if(max >= 65 && max < 77.5){
-            document.out_form.level.value = level2 ;
-          }else if(max >= 77.5 && max < 107.5){
-            document.out_form.level.value = level3 ;
-          }else if(max >= 107.5 && max < 132.5){
-            document.out_form.level.value = level4 ;
-          }else if(max >= 132.5){
-            document.out_form.level.value = level5 ;
-          }
-        }else if(bw >= 67 && bw < 75){
-          if(max < 70){
-            document.out_form.level.value = level1 ;
-          }else if(max >= 70 && max < 85){
-            document.out_form.level.value = level2 ;
-          }else if(max >= 85 && max < 115){
-            document.out_form.level.value = level3 ;
-          }else if(max >= 115 && max < 145){
-            document.out_form.level.value = level4 ;
-          }else if(max >= 145){
-            document.out_form.level.value = level5 ;
-          }
-        }else if(bw >= 75 && bw < 82){
-          if(max < 75){
-            document.out_form.level.value = level1 ;
-          }else if(max >= 75 && max < 90){
-            document.out_form.level.value = level2 ;
-          }else if(max >= 90 && max < 125){
-            document.out_form.level.value = level3 ;
-          }else if(max >= 125 && max < 157.5){
-            document.out_form.level.value = level4 ;
-          }else if(max >= 157.5){
-            document.out_form.level.value = level5 ;
-          }
-        }else if(bw >= 82 && bw < 90){
-          if(max < 80){
-            document.out_form.level.value = level1 ;
-          }else if(max >= 80 && max < 97.5){
-            document.out_form.level.value = level2 ;
-          }else if(max >= 97.5 && max < 132.5){
-            document.out_form.level.value = level3 ;
-          }else if(max >= 132.5 && max < 162.5){
-            document.out_form.level.value = level4 ;
-          }else if(max >= 162.5){
-            document.out_form.level.value = level5 ;
-          }
-        }else if(bw >= 90){
-          if(max < 82.5){
-            document.out_form.level.value = level1 ;
-          }else if(max >= 82.5 && max < 102.5){
-            document.out_form.level.value = level2 ;
-          }else if(max >= 102.5 && max < 137.5){
-            document.out_form.level.value = level3 ;
-          }else if(max >= 137.5 && max < 172.5){
-            document.out_form.level.value = level4 ;
-          }else if(max >= 172.5){
-            document.out_form.level.value = level5 ;
-          }
+
+
+
+
+
         }
       }
     </script>
@@ -157,7 +337,7 @@
       </div>
       <div class="col-md-10">
         <div class="col-md-4" align="center">
-        <form name="in_form" class="form-horizontal">
+        <form name="in_form" class="form-horizontal" id="in_form">
         <div class="form-group">
           <label class="col-sm-3 control-label">重量</label>
           <div class="col-sm-9">
@@ -179,8 +359,8 @@
         <div class="form-group">
           <label class="col-sm-3 control-label">性別</label>
           <div class="col-sm-9">
-            <input type="radio" name="sex" value="male" checked="checked"/> 男　
-            <input type="radio" name="sex" value="female" /> 女
+            <input type="radio" id="male" name="sex" value="男性" checked="checked"/> 男性　
+            <input type="radio" id="femalle" name="sex" value="女性"/> 女性
           </div>
         </div>
         <input type="button" class="btn btn-primary" value="CALCULATE" onClick="calc()"><br>
